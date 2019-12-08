@@ -1,4 +1,4 @@
-This repository will contains red teaming clues.
+This repository will contains top red teaming clues.
 
 * Discovery running ms sql servers in windows active directory domain environment without nmap or any scan tool. 
 -> setspn -T abc.local -Q */* | findstr ":1433" > mssql.txt
@@ -9,3 +9,7 @@ This repository will contains red teaming clues.
 
 * List all domain controllers
 -> nltest /dclist:targetdomain.local
+
+* Discover local users
+-> net localgroup administrators /domain
+
