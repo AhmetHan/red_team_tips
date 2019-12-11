@@ -13,3 +13,7 @@ This repository will contains top red teaming clues.
 * Discover local users
 -> net localgroup administrators /domain
 
+* find krbtgt user last password set, created date and status
+Get-AdUser krbtgt -property created, passwordlastset, enabled
+
+
