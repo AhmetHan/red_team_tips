@@ -1,4 +1,4 @@
-This repository will contains top red teaming clues.
+This repository contains my favorite top red teaming commands and clues.
 
 * Discovery running ms sql servers in windows active directory domain environment without nmap or any scan tool. 
 -> setspn -T abc.local -Q */* | findstr ":1433" > mssql.txt
