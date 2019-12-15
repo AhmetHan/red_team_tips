@@ -46,5 +46,5 @@
 -> Test-NetConnection 10.10.10.10 -CommonTCPPort rdp
 
 * discover potencial http services with using setspn 
-setspn -T abc.local -Q */* | findstr "HTTP" 
+-> setspn -T abc.local -Q */* | findstr "HTTP" 
 
