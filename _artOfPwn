@@ -48,3 +48,7 @@
 * discover potencial http services with using setspn 
 -> setspn -T abc.local -Q */* | findstr "HTTP" 
 
+* enable remote desktop services with using basic command
+-> Get-NetFirewallRule -DisplayName "Remote Desktop*" | Set-NetFirewallRule -enabled true
+
+
