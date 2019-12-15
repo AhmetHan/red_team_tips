@@ -18,4 +18,19 @@ This repository contains my favorite top red teaming commands and clues.
 
 * user agent string manipulation specially powershell invoke or downloader requests, you can use different user agent string
 -> $userAgent = [Microsoft.PowerShell.Commands.PSUserAgent]::Chrome
+  
+*  Get SID of a local user
+-> wmic useraccount where name='ahmethan' get sid
+
+* Get SID for current logged in domain user
+-> wmic useraccount where name='%username%' get sid
+
+* Get SID for current logged in domain user
+-> whoami /user
+
+* Get SID of krbtgt user 
+-> wmic useraccount where name='krbtgt' get sid
+
+
+
 
