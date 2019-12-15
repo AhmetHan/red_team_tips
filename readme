@@ -16,4 +16,6 @@ This repository contains my favorite top red teaming commands and clues.
 * find krbtgt user last password set, created date and status
 -> Get-AdUser krbtgt -property created, passwordlastset, enabled
 
+* user agent string manipulation specially powershell invoke or downloader requests, you can use different user agent string
+-> $userAgent = [Microsoft.PowerShell.Commands.PSUserAgent]::Chrome
 
