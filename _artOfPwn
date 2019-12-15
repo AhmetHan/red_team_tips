@@ -44,3 +44,7 @@
 
 * to test the connection between other machines which using powershell command change valid ip adres
 -> Test-NetConnection 10.10.10.10 -CommonTCPPort rdp
+
+* discover potencial http services with using setspn 
+setspn -T abc.local -Q */* | findstr "HTTP" 
+
