@@ -31,3 +31,6 @@
 
 * Delete shadow copy
 -> vssadmin delete shadows /all /quiet
+
+* List domain admin users 
+-> net group "Domain Admins" /domain
