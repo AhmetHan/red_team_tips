@@ -28,3 +28,6 @@
 
 * Get SID of krbtgt user 
 -> wmic useraccount where name='krbtgt' get sid
+
+* Delete shadow copy
+-> vssadmin delete shadows /all /quiet
