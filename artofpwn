@@ -31,6 +31,7 @@
 
 * Delete shadow copy
 -> vssadmin delete shadows /all /quiet
+-> wmic shadowcopy delete
 
 * List domain admin users 
 -> net group "Domain Admins" /domain
