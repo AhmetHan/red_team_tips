@@ -1,1 +1,30 @@
+* Discovery running ms sql servers in windows active directory domain environment without nmap or any scan tool. 
+-> setspn -T abc.local -Q */* | findstr ":1433" > mssql.txt
 
+* Finding cpassword files and exploit group policy preferences 
+-> findstr /S cpassword %logonserver%\sysvol\*.xml
+-> findstr /S cpassword $env:logonserver\sysvol\*.xml
+
+* List all domain controllers
+-> nltest /dclist:targetdomain.local
+
+* Discover local users
+-> net localgroup administrators /domain
+
+* find krbtgt user last password set, created date and status
+-> Get-AdUser krbtgt -property created, passwordlastset, enabled
+
+* user agent string manipulation specially powershell invoke or downloader requests, you can use different user agent string
+-> $userAgent = [Microsoft.PowerShell.Commands.PSUserAgent]::Chrome
+  
+*  Get SID of a local user
+-> wmic useraccount where name='ahmethan' get sid
+
+* Get SID for current logged in domain user
+-> wmic useraccount where name='%username%' get sid
+
+* Get SID for current logged in domain user
+-> whoami /user
+
+* Get SID of krbtgt user 
+-> wmic useraccount where name='krbtgt' get sid
