@@ -51,4 +51,7 @@
 * enable remote desktop services with using basic command
 -> Get-NetFirewallRule -DisplayName "Remote Desktop*" | Set-NetFirewallRule -enabled true
 
+* stop windows update service
+-> sc stop wuauserv
+
 
