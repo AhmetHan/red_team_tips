@@ -54,4 +54,6 @@
 * stop windows update service
 -> sc stop wuauserv
 
+* list all scheduled task easy way
+- > schtasks /query /xml > totaltasklist.txt
 
