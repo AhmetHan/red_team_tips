@@ -60,10 +60,13 @@
 * basic recon using powershell command
 -> Get-ADGroupMember -Server dcservername "Domain Admins"  | select samaccountname,sid
 
-To disable all proxy variables in one line for your current session specially linux environments.
+* To disable all proxy variables in one line for your current session specially linux environments.
 -> unset `env | grep proxy | cut -d= -f1`
 
-* check powershell Language mode 
-->  $ExecutionContext.SessionState.LanguageMode
+* Check powershell Language mode 
+-> $ExecutionContext.SessionState.LanguageMode
+
+* Export GPO Settings with PowerShell
+-> Get-GPO -All | % {$_.GenerateReport('html') | Out-File "$($_.DisplayName).htm"}
 
 
