@@ -63,4 +63,7 @@
 To disable all proxy variables in one line for your current session specially linux environments.
 -> unset `env | grep proxy | cut -d= -f1`
 
+* check powershell Language mode 
+->  $ExecutionContext.SessionState.LanguageMode
+
 
