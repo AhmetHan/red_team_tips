@@ -72,4 +72,7 @@
 * Export GPO Settings with PowerShell
 -> Get-GPO -All | % {$_.GenerateReport('html') | Out-File "$($_.DisplayName).htm"}
 
+* Simple way to temporarily bypass PowerShell execution policy
+-> set-executionpolicy bypass 
+
 
