@@ -75,4 +75,11 @@
 * Simple way to temporarily bypass PowerShell execution policy
 -> set-executionpolicy bypass 
 
+* How to find user accounts with Kerberos preauthentication disabled.
+-> get-aduser  -LDAP "(&(objectCategory=person)(userAccountControl:1.2.840.113556.1.4.803:=4194304))" -properties DoesNotRequirePreAuth
+-> get-aduser -filter * -properties DoesNotRequirePreAuth |where {$_.DoesNotRequirePreAuth -eq "TRUE"}
+
+
+
+
 
