@@ -85,4 +85,17 @@
 * How to dump the Windows SAM file while the system is running?
 -> esentutl.exe /y /vss c:\windows\ntds\ntds.dit /d c:\folder\ntds.dit
 
+* Find active directory trust information with using powershell command
+-> [System.DirectoryServices.ActiveDirectory.Forest]::GetCurrentForest()
+
+* Find active directory domain information with using powershell command
+-> [System.DirectoryServices.ActiveDirectory.Domain]::GetCurrentDomain()
+
+* Find active directory domain trust
+-> ([System.DirectoryServices.ActiveDirectory.Domain]::GetCurrentDomain()).GetAllTrustRelationships()
+
+* Get forest global catolog
+- > [System.DirectoryServices.ActiveDirectory.Forest]::GetCurrentForest().GlobalCatalogs
+
+
 
