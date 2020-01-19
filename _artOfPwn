@@ -95,7 +95,10 @@
 -> ([System.DirectoryServices.ActiveDirectory.Domain]::GetCurrentDomain()).GetAllTrustRelationships()
 
 * Get forest global catolog
-- > [System.DirectoryServices.ActiveDirectory.Forest]::GetCurrentForest().GlobalCatalogs
+-> [System.DirectoryServices.ActiveDirectory.Forest]::GetCurrentForest().GlobalCatalogs
+
+* Identify admin accounts
+-> get-aduser -filter {AdminCount -eq 1} -Properties Name,AdminCount,ServicePrincipalName,PasswordLastSet,LastLogonDate,MemberOf
 
 
 
