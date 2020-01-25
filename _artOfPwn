@@ -13,6 +13,7 @@
 
 * find krbtgt user last password set, created date and status
 -> Get-AdUser krbtgt -property created, passwordlastset, enabled
+-> Get-ADUser krbtgt -Property PasswordLastSet
 
 * user agent string manipulation specially powershell invoke or downloader requests, you can use different user agent string
 -> $userAgent = [Microsoft.PowerShell.Commands.PSUserAgent]::Chrome
