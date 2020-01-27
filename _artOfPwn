@@ -118,5 +118,11 @@
 * find domain name and sid information
 -> whoami /user
 
-
+* discover elevated credentials in C: drive
+-> C:\> dir /b /s unattend.xml
+-> C:\> dir /b /s web.config
+-> C:\> dir /b /s sysprep.inf
+-> C:\> dir /b /s sysprep.xml
+-> C:\> dir /b /s *pass*
+-> C:\> dir /b /s vnc.ini
 
