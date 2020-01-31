@@ -126,3 +126,8 @@
 -> C:\> dir /b /s *pass*
 -> C:\> dir /b /s vnc.ini
 
+* To test trusted domains
+-> nltest /trusted_domains
+
+* test secure channel between DC in domain 1 and Trusted domain
+-> nltest /server:dc1  /sc_query:trusted domain
