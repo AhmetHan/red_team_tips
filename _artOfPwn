@@ -131,3 +131,8 @@
 
 * test secure channel between DC in domain 1 and Trusted domain
 -> nltest /server:dc1  /sc_query:trusted domain
+
+* find active opened session on machine
+-> query user /server:$SERVER
+
+
