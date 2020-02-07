@@ -135,4 +135,16 @@
 * find active opened session on machine
 -> query user /server:$SERVER
 
+* list all domain users
+-> net user /domain
+
+* List all domain groups
+-> net group /domain
+
+* list domain admin users
+-> net groups "domain admins" /domain
+
+*> list all enterprise admin users
+-> net groups "Enterprise Admins" /domain
+
 
