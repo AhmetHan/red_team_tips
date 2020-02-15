@@ -159,4 +159,7 @@
 * show all tcp and udp port usage and process ID
 -> netstat -ano
 
+* find remote machine running process with using wmic
+->  wmic /node:computername process where (name = "cmd.exe") get processid,name
+
 
