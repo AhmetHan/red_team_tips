@@ -144,7 +144,11 @@
 * list domain admin users
 -> net groups "domain admins" /domain
 
-*> list all enterprise admin users
+* list all enterprise admin users
 -> net groups "Enterprise Admins" /domain
+
+* connect remote computer and run remote commands with using psexec
+-> psexec \\192.168.86.62 cmd
+
 
 
