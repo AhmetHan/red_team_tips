@@ -136,10 +136,10 @@
 -> query user /server:$SERVER
 
 * list all domain users
--> net user /domain
+-> net users /domain
 
 * List all domain groups
--> net group /domain
+-> net groups /domain
 
 * list domain admin users
 -> net groups "domain admins" /domain
@@ -160,6 +160,6 @@
 -> netstat -ano
 
 * find remote machine running process with using wmic
-->  wmic /node:computername process where (name = "cmd.exe") get processid,name
+-> wmic /node:computername process where (name = "cmd.exe") get processid,name
 
 
