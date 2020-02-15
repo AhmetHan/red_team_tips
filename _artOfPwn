@@ -150,5 +150,7 @@
 * connect remote computer and run remote commands with using psexec
 -> psexec \\192.168.86.62 cmd
 
+* run remote commands with using wmic
+-> wmic /node:[TargetIPaddr] /user:[User] /password:[Passwd] process list full
 
 
