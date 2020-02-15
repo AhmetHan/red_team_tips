@@ -153,4 +153,10 @@
 * run remote commands with using wmic
 -> wmic /node:[TargetIPaddr] /user:[User] /password:[Passwd] process list full
 
+* turn off built-in windows firewall
+-> netsh firewall set opmode disable
+
+* show all tcp and udp port usage and process ID
+-> netstat -ano
+
 
