@@ -164,3 +164,6 @@
 
 * save all running scheduled tasks
 -> Schtasks /query /fo csv > scheduled_tasks.csv
+
+* Displays information about the specified service, driver, type of service, or type of driver
+-> sc query 
