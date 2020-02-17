@@ -162,4 +162,5 @@
 * find remote machine running process with using wmic
 -> wmic /node:computername process where (name = "cmd.exe") get processid,name
 
-
+* save all running scheduled tasks
+-> Schtasks /query /fo csv > scheduled_tasks.csv
