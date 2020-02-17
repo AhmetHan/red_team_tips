@@ -167,3 +167,10 @@
 
 * Displays information about the specified service, driver, type of service, or type of driver
 -> sc query 
+
+* Allow ps1 files without blocking powershell v3 later
+-> ls -r *.ps1 | Unblock-File
+
+* ensure and check your powershell execution policy with cmdlet
+-> Set-ExecutionPolicy AllSigned | RemoteSigned | Unrestricted
+
