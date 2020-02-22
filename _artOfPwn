@@ -181,4 +181,9 @@
 * Enable RDP with wmic command
 -> wmic /node:"computername" path Win32_TerminalServiceSetting where AllowTSConnections=“0” call SetAllowTSConnections “1”
 
+* List user accounts
+-> wmic useraccount
+-> wmic useraccount list brief
+
+
 
