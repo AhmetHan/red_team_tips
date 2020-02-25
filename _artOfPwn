@@ -191,3 +191,6 @@
 * Displays a list of logon sessions on this computer.
 -> klist sessions
 
+*If no parameters are provided, Klist will retrieve all the tickets for the currently logged on user.
+-> klist
+
