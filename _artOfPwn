@@ -185,5 +185,9 @@
 -> wmic useraccount
 -> wmic useraccount list brief
 
+* Displays the initial Kerberos TGT.
+-> klist tgt
 
+* Displays a list of logon sessions on this computer.
+-> klist sessions
 
