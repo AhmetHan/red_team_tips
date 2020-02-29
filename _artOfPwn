@@ -185,12 +185,14 @@
 -> wmic useraccount
 -> wmic useraccount list brief
 
-* Displays the initial Kerberos TGT.
+*  Displays the initial Kerberos TGT.
 -> klist tgt
 
-* Displays a list of logon sessions on this computer.
+*  Displays a list of logon sessions on this computer.
 -> klist sessions
 
-*If no parameters are provided, Klist will retrieve all the tickets for the currently logged on user.
+* If no parameters are provided, Klist will retrieve all the tickets for the currently logged on user.
 -> klist
 
+* wmic find quest account sid and name
+-> wmic useraccount where (name='guest' and domain='abc.local') get name,sid
