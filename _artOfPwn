@@ -196,3 +196,7 @@
 
 * wmic find quest account sid and name
 -> wmic useraccount where (name='guest' and domain='abc.local') get name,sid
+
+* running cmd with psexec
+-> PsExec.exe -s -i -d cmd.exe
+
