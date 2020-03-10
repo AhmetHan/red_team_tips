@@ -200,3 +200,5 @@
 * running cmd with psexec
 -> PsExec.exe -s -i -d cmd.exe
 
+* check password rotation and maxpasswordage with reg query 
+-> reg query HKLM\SYSTEM\CurrentControlSet\Services\NetLogon\Parameters
