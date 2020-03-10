@@ -202,3 +202,9 @@
 
 * check password rotation and maxpasswordage with reg query 
 -> reg query HKLM\SYSTEM\CurrentControlSet\Services\NetLogon\Parameters
+
+* check privileges current user 
+-> whoami /priv
+
+* runas cmd another user profile
+->runas /profile /env /user:mydomain\user cmd
