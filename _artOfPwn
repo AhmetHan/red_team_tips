@@ -208,3 +208,8 @@
 
 * runas cmd another user profile
 ->runas /profile /env /user:mydomain\user cmd
+
+* Search for keyword “password” in registry:
+-> REG QUERY HKLM /F "password" /t REG_SZ /S /K
+-> REG QUERY HKCU /F "password" /t REG_SZ /S /K
+
