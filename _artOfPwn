@@ -218,3 +218,12 @@
 
 * enable telnet with command line
 ->dism /online /Enable-Feature /FeatureName:TelnetClient
+
+* find domain controllers,ou,servers,trust...many more with single command
+-> netdom query dc
+-> netdom query fmso
+-> netdom query ou
+-> netdom query trust
+
+
+
