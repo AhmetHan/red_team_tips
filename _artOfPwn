@@ -215,3 +215,6 @@
 
 * Look for passwords logged for autologon
 ->reg query "HKLM\SOFTWARE\Microsoft\Windows NT\Currentversion\Winlogon" 2>null | findstr "DefaultUserName DefaultDomainName DefaultPassword"
+
+* enable telnet with command line
+->dism /online /Enable-Feature /FeatureName:TelnetClient
