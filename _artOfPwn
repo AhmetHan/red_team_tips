@@ -225,5 +225,11 @@
 -> netdom query ou
 -> netdom query trust
 
+* Verify domain controllers in a domain
+->nltest /dclist:domain.local
+
+* Advanced information about user
+-> nltest /user:"testuser"
+
 
 
