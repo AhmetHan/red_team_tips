@@ -231,5 +231,7 @@
 * Advanced information about user
 -> nltest /user:"testuser"
 
+* Show trust relationships for a domain
+-> nltest /domain_trusts
 
 
