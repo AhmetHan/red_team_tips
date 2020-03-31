@@ -224,6 +224,10 @@
 -> netdom query fmso
 -> netdom query ou
 -> netdom query trust
+-> netdom query /domain domain.local DC
+-> netdom query /domain domain.local TRUST
+-> netdom query /domain domain.local FSMO 
+-> netdom query /domain domain.local OU
 
 * Verify domain controllers in a domain
 ->nltest /dclist:domain.local
