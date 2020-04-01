@@ -238,4 +238,14 @@
 * Show trust relationships for a domain
 -> nltest /domain_trusts
 
+* Configure the remote machine to work with WinRM. We need to run the below command from elevated powershell prompt
+-> Enable-PSRemoting -Force
+
+* Testing the WinRM Connection
+* We can use the Test-WSMan function to check if target is configured for WinRM. It should return information returned about the protocol version and wsmid
+-> Test-WSMan XXXX-server01.example.com
+
+* Add Winrm Trusted Host in Windows
+-> winrm set winrm/config/client @{TrustedHosts="RemoteComputerName"}
+
 
