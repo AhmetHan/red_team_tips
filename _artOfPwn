@@ -248,4 +248,10 @@
 * Add Winrm Trusted Host in Windows
 -> winrm set winrm/config/client @{TrustedHosts="RemoteComputerName"}
 
+* Interactive PowerShell session
+-> Enter-PSSession -ComputerName appserver.example.com
+
+* Execute commands using Powershell Invoke-Command on the target over WinRM
+-> Invoke-Command -ComputerName appserver.example.com -ScriptBlock {ipconfig /all}
+
 
