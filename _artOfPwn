@@ -254,4 +254,8 @@
 * Execute commands using Powershell Invoke-Command on the target over WinRM
 -> Invoke-Command -ComputerName appserver.example.com -ScriptBlock {ipconfig /all}
 
+* Disable Windows defender
+-> Set-MpPreference -DisableRealtimeMonitoring $true
+
+
 
