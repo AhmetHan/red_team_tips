@@ -266,3 +266,5 @@
 * Remove Password requirement for logging
 -> wmic useraccount where name='demo' set PasswordRequired=false
 
+* find password last set date with net command
+-> NET USER user | find "Password last set"
