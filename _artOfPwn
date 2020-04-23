@@ -268,3 +268,7 @@
 
 * find password last set date with net command
 -> NET USER user | find "Password last set"
+
+* finding wifi network password
+-> netsh show wlan profiles
+-> netsh wlan show profile name=profilename key=clear
