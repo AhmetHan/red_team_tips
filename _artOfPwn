@@ -272,3 +272,8 @@
 * finding wifi network password
 -> netsh show wlan profiles
 -> netsh wlan show profile name=profilename key=clear
+
+* Change your MAC Address via Powershell
+-> Set-NetAdapter -Name "Ethernet 1" -MacAddress "00-10-18-57-1B-0D"
+
+
